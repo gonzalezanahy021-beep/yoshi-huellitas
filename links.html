@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas - Contacto Directo</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f7f9fc; color: #2d3748; margin: 0; padding: 0; }
+        header { background-color: #2b6cb0; color: white; text-align: center; padding: 2rem 1rem; }
+        nav { background-color: #1a202c; display: flex; justify-content: center; gap: 1.5rem; padding: 1rem; }
+        nav a { color: #e2e8f0; text-decoration: none; font-weight: bold; }
+        nav a:hover, nav a.active { color: #63b3ed; }
+        .container { max-width: 600px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        form { display: flex; flex-direction: column; gap: 1rem; }
+        input, textarea { padding: 0.8rem; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 1rem; }
+        button { background-color: #2b6cb0; color: white; border: none; padding: 0.8rem; font-weight: bold; border-radius: 4px; cursor: pointer; transition: background 0.3s; }
+        button:hover { background-color: #2c5282; }
+        .ws-box { text-align: center; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; }
+        .btn-ws { display: inline-block; background-color: #38a169; color: white; padding: 0.7rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .btn-ws:hover { background-color: #2f855a; }
+        footer { background-color: #1a202c; color: white; text-align: center; padding: 1.5rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📩 Formulario y Contacto</h1>
+        <p>Escríbenos directamente</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="adopciones.html">Adopta</a>
+        <a href="donaciones.html">Dona</a>
+        <a href="links.html" class="active">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Envíanos tu solicitud</h2>
+        <p>Llena este formulario para hacer llegar tus datos directamente a <strong>huellitasrescate@gmail.com</strong>:</p>
+
+        <!-- Formulario configurado hacia tu correo -->
+        <form action="mailto:huellitasrescate@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="Correo" placeholder="Tu Correo Electrónico" required>
+            <input type="tel" name="Telefono" placeholder="Tu Teléfono">
+            <textarea name="Mensaje" rows="5" placeholder="Escribe tu consulta (¿A quién deseas adoptar o qué deseas donar?)" required></textarea>
+            <button type="submit">Enviar Información por Correo</button>
+        </form>
+
+        <div class="ws-box">
+            <h3>¿Prefieres atención inmediata?</h3>
+            <p>Envíanos un mensaje por WhatsApp al <strong>664 781 6524</strong>:</p>
+            <a href="https://wa.me/526647816524?text=Hola%20Huellitas,%20quisiera%20pedir%20información%20sobre%20adopciones/donaciones." target="_blank" class="btn-ws">Abrir Chat de WhatsApp</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Huellitas - Rescate Animal</p>
+    </footer>
+
+</body>
+</html>
+
